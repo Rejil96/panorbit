@@ -1,5 +1,5 @@
 import './index.css'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 
 const UserItem = (props) => {
     const {userData} = props
@@ -14,4 +14,4 @@ const UserItem = (props) => {
     )
 }
 
-export default UserItem
+export default withRouter(UserItem)
