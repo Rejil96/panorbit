@@ -1,0 +1,108 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #444444;
+    font-size: 20px;
+}
+
+.profile-settings-button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.header-profile-pic{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header-profile-name{
+    font-size: 14px;
+    color: #444444;
+    margin-right: 0px;
+}
+
+.profile-setting-popup{
+    width: 240px;
+    height: 330px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: -70px;
+    box-shadow: 5px 5px 15px 6px rgba(0,0,0,0.28);
+}
+
+.popup-profile-pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.popup-profile-name{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+
+.popup-profile-email{
+    margin-top: 16px;
+    font-size: 12px;
+    color: #686868;
+    margin-bottom: 20px;
+}
+
+.popup-random-user-container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 4px;
+    background-color: transparent;
+    
+}
+
+.signout-button{
+    padding: 0px 15px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #be4040;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.rand-profile-name{
+    font-size: 12px;
+    color: #444444;
+}
+
+.rand-profile-pic{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.custom-link{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

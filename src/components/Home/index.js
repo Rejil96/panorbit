@@ -33,7 +33,7 @@ class Home extends Component {
                 <h1 className="users-card-list-heading">Select an account</h1>
             </div>
             <ul className="user-list-wrapper">
-                {usersList.map(eachData => <UserItem key={eachData.id} userData ={eachData}/>)}
+                {usersList.map(eachData => <UserItem key={eachData.id} userData ={eachData} allUser={usersList}/>)}
             </ul>
         </div>
       </div>

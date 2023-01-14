@@ -5,3 +5,10 @@
     display: flex;
     box-sizing: border-box;
 }
+
+.content-wrapper{
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 40px;
+}
