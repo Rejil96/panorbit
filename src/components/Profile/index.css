@@ -1,0 +1,343 @@
+.user-container{
+    width: 100vi;
+    height: 100vh;
+    padding: 20px 40px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.content-wrapper{
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 40px;
+}
+
+.user-details-container{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    border-top: 1px solid #cfcfcf;
+    padding: 30px 0px 20px 0px;
+}
+
+.user-info-container{
+    min-width: 320px;
+    height: 100%;
+    display: flex;
+    border-right: 1px solid #cfcfcf;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+.user-info-profile-img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.user-info-text-name{
+    color: #2e2e2e;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.user-info-label{
+    color: #8b8b8b;    
+    font-size: 14px;
+    margin: 16px 0px 0px 0px;
+    padding: 0px;
+    min-width: 100px;
+}
+
+.user-info-text{
+    color: #2e2e2e;
+    font-size: 14px;
+    margin: 16px 0px 0px 0px;
+    padding: 0px;
+    font-weight: 600;
+}
+
+
+.user-personal-info-container{
+    width: 100%;
+    display: flex;
+}
+
+
+.user-info-labels-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    text-align: right;
+    padding-right: 20px;
+}
+
+.user-info-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.horiz-line{
+    width:100%;
+    text-align:left;
+    margin-top: 20px; 
+    border-top:1px solid #cfcfcf;
+}
+
+.user-info-text-company{
+    color: #8b8b8b;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.user-info-address-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+    min-width: 200px;
+}
+
+.user-info-text-address{
+    align-self: flex-start;
+    color: #8b8b8b;    
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.map{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.geo-info-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.geo-text{
+    font-size: 10px;
+    color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.geo-label{
+    font-size: 10px;
+    color: #8b8b8b;
+    margin-right: 5px;
+}
+
+.chat-box{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    width: 200px;
+    border-radius: 10px 10px 0px 0px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: blue;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.chat-box-name-container{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.chat-text{
+    font-size: 14px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.chatList{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px 6px #00000047;
+    border: 1px solid blue;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.chat-header{
+    width: 180px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: blue;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.chat-controll-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+.display-utility{
+    display: none;
+}
+
+.chat-users-list-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.user-chat-label{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10px 0px 10px;
+}
+
+
+.user-list-item-chat{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 10px;
+    padding-bottom: 10px;;
+}
+
+.profile-picture{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username{
+    color: #5a5a5a;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.online{
+    color: green;
+    margin-bottom: 18px;
+}
+
+.user-chat-panel{
+    width: 200px;
+    height: 250px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0px; 
+    right: 0px;
+    box-shadow: 5px 5px 15px 6px #00000047;
+    border-radius: 10px 10px 0px 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.chat-username{
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.chat-header-label{
+    width: 184px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: blue;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.user-list-item-chat-header{
+    display: flex;
+    align-items: center;
+}
+
+.chat-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.chat{
+    background-color: #f0eded;
+    padding: 5px;
+    width: 100px;
+    margin: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #2e2e2e;
+}
+
+.custom-align-right{
+    align-self: flex-end;
+}
+
+.coming-soon-container{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon-heading{
+    font-size: 82px;
+    font-weight: 900;
+    text-align: center;
+    opacity: 0.2;
+   
+}

@@ -69,7 +69,7 @@ class Header extends Component {
           const secondRandomUser = randomUser[1];
           const userBasedonLoad =
             currentUser === undefined ? onLoadCurrentUser : currentUser;
-          const { id, profilepicture, name, email } = userBasedonLoad;
+          const { profilepicture, name, email } = userBasedonLoad;
 
           const { location } = history;
           const { params } = match;
@@ -80,13 +80,13 @@ class Header extends Component {
             case `/user/${params.id}`:
               getHeadingText = <p className="page-heading">Profile</p>;
               break;
-            case `/user/${id}/posts`:
+            case `/user/${params.id}/posts`:
               getHeadingText = <p className="page-heading">Posts</p>;
               break;
-            case `/user/${id}/gallery`:
+            case `/user/${params.id}/gallery`:
               getHeadingText = <p className="page-heading">Gallery</p>;
               break;
-            case `/user/${id}/todo`:
+            case `/user/${params.id}/todo`:
               getHeadingText = <p className="page-heading">ToDo</p>;
               break;
             default:

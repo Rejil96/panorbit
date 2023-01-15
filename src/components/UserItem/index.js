@@ -7,7 +7,7 @@ const UserItem = (props) => {
     <UserContext.Consumer>
       {(value) => {
         const { userData, allUser } = props;
-        
+
         const { onUpdateCurrentUser, onUpdateRandomUser } = value;
         const { id, profilepicture, name } = userData;
         const onContextUpdate = () => {
@@ -18,16 +18,15 @@ const UserItem = (props) => {
           let getFirstRandomIndex = null;
           do {
             getFirstRandomIndex = Math.floor(Math.random() * 10);
-          } while (getFirstRandomIndex === (currentUserData[0].id - 1));
+          } while (getFirstRandomIndex === currentUserData[0].id - 1);
 
-          let getSecondRandomIndex = null; 
+          let getSecondRandomIndex = null;
           do {
             getSecondRandomIndex = Math.floor(Math.random() * 10);
           } while (
-            getSecondRandomIndex === (currentUserData[0].id - 1)||
-            getFirstRandomIndex === getSecondRandomIndex 
+            getSecondRandomIndex === currentUserData[0].id - 1 ||
+            getFirstRandomIndex === getSecondRandomIndex
           );
-            
 
           const randomUsersList = [
             allUser[getFirstRandomIndex],
